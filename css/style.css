@@ -1,0 +1,50 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: rgba(228, 11, 51, 0.1882352941);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.time {
+  position: absolute;
+}
+
+.seconds {
+  width: 13px;
+  height: 500px;
+}
+.seconds .child {
+  width: 100%;
+  height: 50%;
+}
+
+.minutes {
+  width: 20px;
+  height: 400px;
+  transform: rotateZ(0deg);
+}
+.minutes .child {
+  width: 100%;
+  height: 50%;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hours {
+  width: 20px;
+  height: 240px;
+}
+.hours .child {
+  width: 100%;
+  height: 50%;
+  font-weight: 900;
+  font-size: 24px;
+}
