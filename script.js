@@ -10,6 +10,7 @@ const minNumCont = document.querySelector('.minutes').querySelectorAll('.num')
 const hoursNumCont = document.querySelector('.hours').querySelectorAll('.num')
 
 const deg = 360 / 60
+const degHours = 360 / 60
 
 setInterval(() => {
     let seconds = new Date().getSeconds(),
@@ -20,7 +21,7 @@ setInterval(() => {
 
     secCont.setAttribute('style', `transform: rotateZ(${seconds * deg}deg);`)
     minCont.setAttribute('style', `transform: rotateZ(${minutes * deg}deg);`)
-    hoursCont.setAttribute('style', `transform: rotateZ(${hours * deg}deg);`)
+    hoursCont.setAttribute('style', `transform: rotateZ(${hours * degHours}deg);`)
 
     for (let i = 0; i < secNumCont.length; i++) {
         secNumCont[i].innerHTML = `${seconds}`
