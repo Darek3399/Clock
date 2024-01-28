@@ -15,7 +15,7 @@ const degHours = 360 / 12
 setInterval(() => {
     let seconds = new Date().getSeconds(),
     minutes = new Date().getMinutes(),
-    hours = new Date().getHours() + 3
+    hours = new Date().getHours()
 
 
     secCont.setAttribute('style', `transform: rotateZ(${seconds * deg}deg);`)
@@ -36,5 +36,5 @@ setInterval(() => {
         hoursNumCont[i].innerHTML = `${hours}`
         hoursNumCont[i].setAttribute('style', `transform: rotateZ(${ - hours * degHours}deg);`)
     }
-    
+
 }, 1000)
