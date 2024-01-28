@@ -11,7 +11,6 @@ const hoursNumCont = document.querySelector('.hours').querySelectorAll('.num')
 
 const deg = 360 / 60
 
-console.log(secNumCont)
 setInterval(() => {
     let seconds = new Date().getSeconds(),
     minutes = new Date().getMinutes(),
